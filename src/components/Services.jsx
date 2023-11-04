@@ -60,9 +60,7 @@ function Services () {
             `; 
             document.getElementById('frameInput2').style = `
             border: solid 2px rgb(255, 95, 95);
-            `; 
-            window.alert("Введите свои данные!")
-            
+            `;             
         }
 
     }
