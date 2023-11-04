@@ -3,7 +3,10 @@ import Arrow from "../img/Arrow.svg";
 
 function Cards(props) {
   const arrow = Arrow;
-
+  let btn1 = document.getElementById('btn1');
+  function clickBtn1() {
+    
+  }
 
     return(
         <div className="Cards" id="cards">
@@ -16,7 +19,7 @@ function Cards(props) {
                             <a className="cards-link" id="cards_link" href="#">{props.content.link}</a>
                             <hr />
                         </div>
-                        <a href="/Services"><button className="card__btn services_btn" id="btn"><b>{props.content.price}</b><span><img src={arrow} alt="" /></span></button></a>
+                        <a href={props.content.href}><button id={props.content.btn_id} onClick={clickBtn1} className="card__btn services_btn"><b>{props.content.price}</b><span><img src={arrow} alt="" /></span></button></a>
                     </div>
             </div>
         </div>

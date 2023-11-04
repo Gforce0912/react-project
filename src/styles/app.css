@@ -112,27 +112,46 @@ button{
     justify-content: center;
     display: flex;
 }
+.main__content-paragraph{
+  text-align: left;
+}
 .main__content-head hr{
     width: 100px;
     height: 1px;
     color: #FFC222;
     background-color: #FFC222;
-    border: #FFC222;
-    margin: 15px 40px 0px 40px;
+    border: #FFC222 2px solid;
+    margin: 15px 40px 0px -53.5vw;
 }
 
 
 .main__content-paragraph{
     justify-content: center;
-    text-align: center;
     color: #858585;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 15px;
     line-height: 25px;
     margin-top: 30px;
+    margin-left: 17.5vw;
 }
-
-
+.main__content p{
+  justify-content: center;
+  color: #858585;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  margin-left: -27vw;
+  margin-top: 30px;
+}
+.cards{
+  margin-top: 10vh;
+}
+.main__content-a{
+  margin-left: 20vw;
+}
+.reviews-h2{
+  text-align: left;
+}
 .btn span{
     border-radius: 5px;
     background: #FFC222;
@@ -532,10 +551,13 @@ button{
 
 .about-program-work{
     width: 100%;
-    height: 170vh;
+    height: 180vh;
     background: #324451;
     padding-top: 10vh;
     margin-top: 20vh;
+}
+.AboutProgram_footer {
+  margin-top: 0;
 }
 .work_header span{
     position: absolute;
@@ -930,6 +952,7 @@ button{
 
 
 .footer{
+    margin-top: 0;
     padding-top: 20px;
     background:#1E303D;
     margin-top: 0vh;
@@ -1258,7 +1281,7 @@ button{
     opacity: 0;
 }
 .AvatarEdit1{
-    
+
     position: absolute;
     margin-left: -17.5px;
     margin-top: -7.5px;
@@ -1272,4 +1295,20 @@ button{
 }
 .camera img:hover{
     transform:scale(1.1);
+}
+
+.services_footer{
+  margin-top: 8vh;
+}
+.AboutProgram_footer{
+  margin-top: 0vh;
+}
+
+.frame1, .frame2{
+    justify-content: center;
+    display: flex;
+}
+
+.frame-inputs, .frame2-inputs{
+    display: block;
 }

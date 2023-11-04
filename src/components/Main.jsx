@@ -19,8 +19,8 @@ const Main = ( ) => {
   const arrow = Arrow;
   const arrowWhite = ArrowWhite;
 
- 
-  
+
+
   const [aboutCardsTitle, setAboutCardsTitle] = useState("Что то");
   const [aboutCardsBody, setAboutCardsBody] = useState('Хочу сказать огромное спасибо студентческому агентству! Я принимала а и аиталина всегда помогали и отвечали на все интересующие вопросы, давали советы.');
 
@@ -37,7 +37,7 @@ const Main = ( ) => {
             <main>
             <div className="main__content">
                 <div className="main__content-head">
-                    <hr/><h2>Оформление документов</h2><hr/>
+                    <hr/><h2>Оформление документов</h2>
                 </div>
                 <div className="main__content-paragraph">
                     В компании DagCorporation процесс <br/>
@@ -92,7 +92,7 @@ const Main = ( ) => {
         </div>
         <div className="main__content">
                 <div className="main__content-head"  id="form">
-                    <hr/><h2>Получить консультацию</h2><hr/>
+                    <hr/><h2>Получить консультацию</h2>
                 </div>
                 <div className="main__content-paragraph">
                     Комплексный подход к вашему вопросу <br/>
@@ -132,17 +132,17 @@ const Main = ( ) => {
         <div className="about-programm">
             <div className="main__content">
                     <div className="main__content-head">
-                        <hr/><h2>О программе</h2><hr/>
+                        <hr/><h2>О программе</h2>
                     </div>
-                    <div className="main__content-paragraph">
-                        <b>
+                    <div className="main__content-paragraph_1">
+                        <p>
                             Комплексный подход к вашему вопросу <br/>
                             свевременная помощь от наших сотрудников, <br/>
                             поможем собрать полный пакет документов.
-                        </b>
+                        </p>
                     </div>
             </div>
-            <a href="#">Подробнее<img src={arrow} alt="" /></a>
+            <a href="#" className="main__content-a">Подробнее<img src={arrow} alt="" /></a>
         </div>
 
             <About slideText={{
