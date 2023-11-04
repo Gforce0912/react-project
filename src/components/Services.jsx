@@ -4,21 +4,12 @@ import Icone_1 from "../img/icone1.svg"
 import Icone_2 from "../img/icone2.svg"
 import Icone_3 from "../img/icone3.svg"
 import Footer from "./Footer";
-import Frame from "./Frame";
 function Services () {
     const [largeCardsIcon, setLargeCardsIcon] = useState(Icone_1);
     const [largeCardsTitle, setLargeCardsTitle] = useState("Work and Travel Greenheart");
     const [largeCardsBody, setLargeCardsBody] = useState(`sit amet consectetur. Adipiscing sed nulla nibh vulputate orci faucibus neque ultrices sapien. Neque in curabitur suscipit ut.
     Eu malesuada diam proin faucibus in leo non diam. Fermentum sed augue felis tortor id nam ipsum enim scelerisque. Proin aliquam in malesuada pretium elementum. Rutrum placerat urna velit elementum ornare vitae mauris in. Dolor amet sed et egestas at mollis quam enim.
     Massa nullam mi posuere in interdum facilisis dictum adipiscing. In at sed pulvinar sit vestibulum. Ullamcorper ut nisl in at sollicitudin lectus massa suscipit tincidunt. Etiam in sed praesent tristique. Sagittis scelerisque quis mattis purus.`,);
-
-
-
-
-
-
-
-
 
     function slideService(){
         setLargeCardsTitle('RandomText');
@@ -45,10 +36,54 @@ function Services () {
         }
     }
 
+    function clickBtn1() {
+        document.getElementById('frames').className = 'Service-frames'; 
+      }
+    function closeFrame(){
+        document.getElementById('frames').className = 'frame_none';
+    }
 
+    function closesFrame(){
+        document.getElementById('frames').className = 'frame_none';
+    }
+    function enterFrame(){
+        if(frameInputValue1 != '' && frameInputValue2){
+            document.getElementById('frameInputs').innerHTML = `Спасибо вам за то, что выбрали
+            нас. Наш специалист свяжется с
+            вами в ближайшее время`;
+            document.getElementById('frameInputs').className = 'frame_input-none'; 
+            document.getElementById('frameBtn').innerHTML = `<button id="frameClose">Закрыть</button>`; 
+        }
+        else{
+            document.getElementById('frameInput1').style = `
+            border: solid 2px rgb(255, 95, 95);
+            `; 
+            document.getElementById('frameInput2').style = `
+            border: solid 2px rgb(255, 95, 95);
+            `; 
+            window.alert("Введите свои данные!")
+            
+        }
+
+    }
+    const [frameInputValue1, setFrameInputValue1] = useState('')
+    const [frameInputValue2, setFrameInputValue2] = useState('')
+    
+        
     return(
         <div>
-            <Frame/>
+            <div className="frame_none" id='frames'>
+                <div className="Service-frame_inputs">
+                            <button id="closeFrame" onClick={closeFrame}>&#10006;</button>
+                            <div id="frameInputs"  className="frameInput-none">
+                                <input id='frameInput1' value={frameInputValue1} onChange={ev => setFrameInputValue1(ev.target.value)} type="text" className="Service-frame_input" placeholder="Ваше имя"/>
+                                <input id='frameInput2' value={frameInputValue2} onChange={ev => setFrameInputValue2(ev.target.value)} type="text" className="Service-frame_input" placeholder="Ваш номер"/>
+                            </div>
+                        </div>
+                        <div className="Service-frame_btn" id="frameBtn">
+                            <button id="frameEnter" onClick={enterFrame}>Отправить</button>
+                        </div>
+                </div>
             <div className="services_head">
                 <h2>Варианты программ</h2>
                 <a href="/"><span>&lt;</span> На главную</a>
@@ -99,7 +134,7 @@ function Services () {
                     src: largeCardsIcon,
                     price: "Учавствовать",
                     link: "Цена: 2500$",
-                    
+                    onclick: clickBtn1
                     }}/>
                     <div className="slider-services">
                         <button onClick={slideService}><span>&lt;</span></button>

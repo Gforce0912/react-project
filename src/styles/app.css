@@ -1303,12 +1303,85 @@ button{
 .AboutProgram_footer{
   margin-top: 0vh;
 }
-
-.frame1, .frame2{
-    justify-content: center;
-    display: flex;
+.Service-frame_inputs{
+    display:grid;
+}
+.Service-frame_input{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    border: solid 2.5px #D2D2D2;
+    padding-left: 2vw;
+    font-size: 20px;
+    width: 40vw;
+    height: 50px;
+}
+.Service-frames{
+    display: block;
+    width: 50vw;
+    height: 55vh;
+    margin-left: 25vw;
+    margin-top: 8vh;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: 0px 0px 10px 2px gray;
+    position: fixed;
+    z-index: 1000;
+    animation: frameAnim 0.2s;
+}
+@keyframes frameAnim {
+    from{transform: translateY(-100); opacity: 0;}
+    to{transform: translateY(0); opacity: 100;}
+}
+.Service-frame_inputs button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 30px;
+    color: #D2D2D2;
+    margin-left: 45vw;
+    margin-top: 2vh;
+    transition: all 0.5s;
+}
+.Service-frame_inputs button:hover{
+    color: #6d6d6d;
+}
+.Service-frame_btn button{
+    width: 40vw;
+    height: 50px;
+    border: none;
+    background:#FFC222;
+    color: black;
+    font-size: 20px;
+    margin-left: 5vw;
+    margin-top: 6vh;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.Service-frame_btn button:hover{
+    box-shadow: 0px 0px 10px 3px rgb(218, 218, 218);
+    transform: scale(1.01);
+}
+.frame_none{
+    display: none;
+    animation: frameNone 0.5s;
+}
+@keyframes frameNone {
+    from{transform: translateY(0); opacity: 100;}
+    to{transform: translateY(-100); opacity: 0;}
 }
 
-.frame-inputs, .frame2-inputs{
+.frame_input-none{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    max-width: 40vw;
+    /* margin-bottom: 7vh; */
+}
+.frameBtn_off{
+    display: none;
+}
+.frameBtn_on{
     display: block;
 }
