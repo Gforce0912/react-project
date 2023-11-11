@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    list-style-type: none;
+}
 body{
     overflow-x: hidden;
 }
@@ -146,8 +149,8 @@ button{
 .cards{
   margin-top: 10vh;
 }
-.main__content-a{
-  margin-left: 20vw;
+.main__content-a button{
+  margin-left: -110vw;
 }
 .reviews-h2{
   text-align: left;
@@ -260,9 +263,9 @@ button{
 
 .opportunity{
     background-image: url(../img/bg3.svg);
-    background-size: cover;
+    background-size: contain;
     margin-top: 180px;
-    width: 100%;
+    width: 100vw;
     height: 210px;
     display: flex;
     padding-left: 80px;
@@ -303,18 +306,16 @@ button{
 }
 
 .reviews-h2{
-    margin-top: calc(var(--index) * 10);
+    margin-top: 15vh;
     text-align: center;
 }
 .reviews-main{
-    padding-left: calc(var(--index)* 4.5);
+    padding-left: 8vw;
     display: flex;
 }
 
 @media (max-width: 720px) {
     .reviews-main{
-        margin-left: calc(var(--index)* 4);
-        margin-right: calc(var(--index)* 2);
         flex-wrap: wrap;
     }
 }
@@ -1384,4 +1385,354 @@ button{
 }
 .frameBtn_on{
     display: block;
+}
+.logo span{
+    display: none;
+}
+.main__content-paragraph_1 p{
+    width:25vw;
+    margin-left: -37.5vw;
+}
+
+.left_nav{
+    display: none;
+}
+.main_our_histo{
+    display: flex;
+}
+.about_head a{
+    color: white;
+}
+
+@media (max-width: 720px) {
+
+    .head__nav nav ul{
+        display: none;
+    }
+    .head__slide-text{
+        /* background-position-x:10vw; */
+        background-size: 330vw;
+    }
+    .head__slide-text h2{
+        margin-top: -10vh;
+        font-size: 20px;
+        line-height: 4vh;
+    }
+    .head__slide-text p{
+        margin-top: 2.5vh;
+        line-height: 3.5vh;
+    }
+    .opportunity-content{
+        display: none;
+    }
+    .opportunity{
+        display: none;
+    }
+    .head__slide-text .btn {
+        margin-top: 4vh;
+        margin-left: 30vw;
+    }
+    .head__nav a img{
+        width: 50px;
+    }
+    .logo {
+        display: flex;
+    }
+    .logo img{
+        margin-left: 8vw;
+    }
+    .logo span{
+        margin-left: 60vw;
+        font-size: 2rem;
+        display: block;
+    }
+    .main__content-head{
+        font-size: 1rem;
+        max-width: 30vw;
+        margin-left: 60vw;
+    }
+    .main__content-head hr{
+        width: 15vw;
+    }
+    .main__content-head h2{
+        margin-left: -20px;
+    }
+    .main__content-paragraph{
+        margin-left: 5vw;
+    }
+    .cards{
+        width: 147vw;
+    }
+    .card__title{
+        font-size: 15px;
+    }
+    .card__body{
+        font-size: 15px;
+        line-height: 3vh;
+    }
+    .cards-f{
+        margin-top: 5vh;
+
+    }
+    .cards-f a{
+        font-size: 15px;
+    }
+    .card__btn{
+        margin-left: 27vw;
+    }
+    .Cards{
+        margin-left: 3vw;
+        margin-top: 2vh;
+    }
+    .main-btn{
+        margin-left: 8vw;
+    }
+    .about{
+        background-size: 540vw;
+        height: calc(var(--index) * 30);
+        padding-top: 3vh;
+    }
+    .about h2{
+        font-size: 1.5rem;
+        margin-left: 7vw;
+    }
+    .about p{
+        margin-top: 2vh;
+        font-size: 0.9rem;
+        margin-left: 7vw;
+    }
+    .about_btn{
+        width: 50vw;
+        margin-left: 7vw;
+    }
+    .about_btn p{
+        font-size: 0.8rem;
+        margin-left: 0vw;
+        margin-top: 0;
+    }
+    .form{
+        margin-left: 0;
+    }
+    .get-consultation{
+        margin-left: 7vw;
+    }
+    .messeng{
+        margin-left: 7vw;
+        width: 70vw;
+    }
+    .messeng textarea{
+        width: 84vw;
+    }
+    .main__content-head hr{
+        width: 20vw;
+    }
+    /* .main__content-head {
+        margin-left: 45vw;
+    } */
+    .main__content-paragraph_1 p{
+        margin-left: -45vw;
+        width: 90vw;
+        font-size: 1rem;
+    }
+
+    .main-about{
+        margin-left: -17vw;
+        display: block;
+    }
+
+    .slide-about-cards{
+        display: block;
+    }
+    .n{
+        max-width: 90vw;
+        min-width: 0;
+    }
+    .about_body{
+        margin-left: 0vw;
+        width: 70vw;
+        line-height: 4vh;
+    }
+    .slide-about-text, .bookmark{
+        margin-left: 7vw;
+    }
+    .main__content-head_1{
+        margin-left: 0vw;
+    }
+    .slide-about-cards{
+        width: 84vw;
+        margin-left: 23vw;
+    }
+    .about-cards_img img {
+        width: 79vw;
+    }
+    .about-cards_content{
+        height: 27vh;
+        line-height: 3.2vh;
+    }
+    .general-about-cards {
+        margin-top: 5vh;
+    }
+    .main__content-a{
+        display: none;
+    }
+    .about-programm {
+        padding-left: 50vw;
+    }
+    .reviews-h2{
+        margin-top: 65vh;
+    }
+    .Reviews {
+        width: 300vw;
+        max-width: 300vw;
+    }
+    .reviews_cards h5{
+        font-size: 1.2rem;
+    }
+    .reviews_cards p{
+        font-size: 1rem;
+    }
+    .reviews-main{
+        padding-left: 5vw;
+    }
+    .footer {
+        display: block;
+        height: 85vh;
+    }
+    .map{
+        margin-left: 0vw;
+        width: 100vw;
+        margin-top: 5vh;
+    }
+    .logo2{
+        display: none;
+    }
+    .left_nav{
+        animation: leftNav 0.5s;
+        z-index: 1000;
+        background: white;
+        height: 100%;
+        width: 55vw;
+        margin-left: 45vw;
+        margin-top: -4vh;
+        padding-top: 4vh;
+        padding-left: 5vw;
+        display: flex;
+        position: fixed;    
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.441);
+        display: none;
+    }
+    .left_nav ul a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+    .left_nav ul a li{
+        margin-top: 1vh;
+    }
+    .left_nav span{
+        margin-top: -2vh;
+        font-size: 1.3rem;
+    }
+
+    @keyframes leftNav {
+        from{transform: translateX(-100); opacity:0;}
+        to{transform: translateX(0); opacity: 100;}
+    }
+    .btn_all{
+        margin-left: 10vw;
+    }
+    .MAIN{
+        overflow-x: hidden;
+    }
+    .quetVarious{
+        display: block;
+    }
+    #arrowDown{
+        display: none;
+    }
+    .messeng{
+        margin-top: 30vh;
+    }
+    .main_services_cards {
+        display: block;
+        margin-left: -5vw;
+    }
+    .Cards{
+        max-width: none;
+        width: 88vw;
+    }
+    .large_card{
+        margin-left: 7vw;
+    }
+    .services_head h2 {
+        margin-right: 8vw;
+        font-size: 1.2rem;
+    }
+    .slide-about-cards {
+        max-width: none;
+    }
+    .get-consultation input {
+        width: 85vw;
+    }
+    .dis-input {
+       width: 85vw; 
+    }
+    .card_11 p{
+        padding-left: -10vw;
+    }
+    .about_head h2{
+        margin-right: 20vw;
+    }
+    .main_our_histo{
+        display: block;
+    }
+    .our-history {
+        padding-left: 5vw;
+    }
+    .our-history-hr{
+        width: 20vw;
+    }
+    .history-content-text p{
+        width: 70vw;
+    }
+    .mission-content p{
+        font-size: 0.9rem;
+        width: 80vw;
+    }
+    .history-img img{
+        width: 85vw;
+        margin-top: 5vh;
+        margin-left: -5vw;
+    }
+    .our-mission{
+        display: block;
+        height: 85vh;
+        padding-left: 5vw;
+    }
+    .mission-img img {
+        width: 90vw;
+    }
+    .our-mission-h2 {
+        margin-top: 5vh;
+    }
+    .causes-card{
+        width: 90vw;
+        height: 40.3vh;
+        margin-left: 5vw;
+        margin-top: 10vh;
+    }
+    .bookmark1 {
+        margin-left: -60vw;
+    }
+    .bookmark2 {
+        margin-left: 60vw;
+        margin-top: 1.8vh;
+    }
+    .statistic{
+        display: block;
+    }
+    .nn{
+        overflow: hidden;
+        margin-top: 3vh;
+    }
 }

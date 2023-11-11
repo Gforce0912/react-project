@@ -1,5 +1,4 @@
 import imgLogo from "../img/logo.svg";
-import Arrow from "../img/Arrow.svg";
 import { Routes, Route, Link } from "react-router-dom";
 import Services from './Services';
 import Main from './Main';
@@ -10,11 +9,34 @@ import AllReviews from "./AllReviews";
 
 
 function Header() {
+  const burgerNav = () =>{
+    document.getElementById('left_nav').style.display = "flex";
+  } 
+  const closeNav = () =>{
+    document.getElementById('left_nav').style.display = "none";
+  } 
     return(
         <div>
+          <div className="left_nav" id="left_nav">
+            <nav >
+              <ul>
+                <a href="/"><li>Главная</li></a>
+                <a href="/Services"><li>Услуги</li></a>
+                <a href="/AboutCompany"><li>О компании</li></a>
+                <a href="/AboutProgram"><li>О программе</li></a>
+                <a href="/AllReviews"><li>Отзывы</li></a>
+                <a href="#footer" onClick={closeNav}><li>Контакты</li></a>
+              </ul>
+            </nav>
+            <span onClick={closeNav}>&#10006;</span>
+          </div>
         <header>
           <div className="head__nav">
-            <a href="/"><img src={imgLogo} alt="Logo"/></a>
+            <div className="logo">
+                <a href="/"><img src={imgLogo} alt="Logo"/></a>
+                <span id="burgerNav" onClick={burgerNav}>&#9776;</span>
+            </div>
+            
             <nav >
               <ul>
                 <a href="/"><li>Главная</li></a>

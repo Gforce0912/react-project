@@ -53,6 +53,9 @@ function Services () {
             вами в ближайшее время`;
             document.getElementById('frameInputs').className = 'frame_input-none'; 
             document.getElementById('frameBtn').innerHTML = `<button id="frameClose">Закрыть</button>`; 
+            document.getElementById('frameClose').onclick = function () {
+                document.getElementById('frames').className = 'frame_none';      
+            }
         }
         else{
             document.getElementById('frameInput1').style = `
@@ -120,13 +123,13 @@ function Services () {
                 link: "Подробнее",
                 href: "/Services"  
                 }}/>
-            </div>
+        </div>
 
             <div className="large_card">
                 <Cards content={{
                     id: "Icone_1",
                     btn_id: "btn1",
-                    class: "cards-footer1 cards-f cards-serv1",
+                    class: "cards-footer1 cards-f cards-serv1 card_11",
                     title: largeCardsTitle,
                     body: largeCardsBody,
                     src: largeCardsIcon,

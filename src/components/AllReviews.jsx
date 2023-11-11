@@ -86,7 +86,10 @@ function AllReviews(){
         if(frameInputValue1 != '' && frameInputValue2){
             document.getElementById('frameInputs').innerHTML = `Ваш отзыв будет опубликован в ближайшее время. Благодарим вас!`;
             document.getElementById('frameInputs').className = 'frame_input-none'; 
-            document.getElementById('frameBtn').innerHTML = `<button id="frameClose">Закрыть</button>`; 
+            document.getElementById('frameBtn').innerHTML = `<button id="frameClose">Закрыть</button>`;
+            document.getElementById('frameClose').onclick = function () {
+                document.getElementById('frames').className = 'frame_none';      
+            } 
         }
         else{
             document.getElementById('frameInput1').style = `
@@ -101,7 +104,9 @@ function AllReviews(){
     const [frameInputValue1, setFrameInputValue1] = useState('')
     const [frameInputValue2, setFrameInputValue2] = useState('')
     
-    
+
+
+
     return(
         <div className="AllReviews"> 
         <       div className="frame_none" id='frames'>
@@ -148,7 +153,7 @@ function AllReviews(){
             <div className="revForm">
                 <div className="rev-img">
                     <div className="rev-form_img">
-                        <div className="camera">
+                        <div className="camera" id="imgContaner">
                             <Avatar className="AvatarEdit1" name={nameValue} size="70"/>
                             {/* <img src={revAvatar} id="revAvatar" alt="" /> */}
                             <input id="Avatar" className="AvatarEdit"type="file" multiple/>

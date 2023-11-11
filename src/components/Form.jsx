@@ -12,12 +12,11 @@ const arrowDown = ArrowDown;
 const arrow = Arrow;
 const quetions = ["Как читать буквы", "Как писать буквы", "Помогите мне"];
 
-
 function showQue(){
     document.getElementById('quetVarious').style.display = "block";
-    document.getElementById('overlay').style.display = 'block';
-        
+    document.getElementById('overlay').style.display = 'block';         
 }
+
 function exitQue () {
     document.getElementById('quetVarious').style.display = "none";
     document.getElementById('overlay').style.display = 'none';
@@ -65,9 +64,9 @@ function quetThemes3() {
                 </div>
             </div>
             
-            <div className="messeng">
+            <div className="messeng"  id="textarea" >
                 <h4>Сообщение</h4>
-                <textarea value={textArea} onChange={ev => setTextArea(ev.target.value)}></textarea>
+                <textarea value={textArea}onChange={ev => setTextArea(ev.target.value)}></textarea>
                 <a href="#" className="main-btn-a"><button className="btn form_btn"><b>Бесплатная консультация</b><span><img src={arrow} alt="" /></span></button></a>
             </div>
         </div>
