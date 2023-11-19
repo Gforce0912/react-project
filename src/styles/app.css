@@ -552,7 +552,7 @@ button{
 
 .about-program-work{
     width: 100%;
-    height: 180vh;
+    height: 150vh;
     background: #324451;
     padding-top: 10vh;
     margin-top: 20vh;
@@ -1083,22 +1083,25 @@ button{
 }
 .quetVarious{
     display: none;
-    border-radius:5px;
-    border: 1px solid #858585;
+
     margin-top: 5px;
     width: 300px;
     height: 150px;
     background: none;
 }
 #quetVarious{
+    border-radius:5px;
+    /* border: 1px solid #858585; */
     z-index: 20;
     position: absolute;
 }
 .quetVarious h4{
     height: 50px;
     padding-left: 10px;
-    padding-top: 15px;
+    padding-top: 10px;
     cursor: pointer;
+    border-left: 1px solid #858585;
+    border-right: 1px solid #858585;
 
 }
 .quetVarious h4:hover{
@@ -1518,6 +1521,7 @@ button{
     }
     .messeng{
         margin-left: 7vw;
+        margin-top: 25vh;
         width: 70vw;
     }
     .messeng textarea{
@@ -1617,7 +1621,7 @@ button{
         padding-top: 4vh;
         padding-left: 5vw;
         display: flex;
-        position: fixed;    
+        position: fixed;
         box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.441);
         display: none;
     }
@@ -1650,9 +1654,6 @@ button{
     #arrowDown{
         display: none;
     }
-    .messeng{
-        margin-top: 30vh;
-    }
     .main_services_cards {
         display: block;
         margin-left: -5vw;
@@ -1675,7 +1676,7 @@ button{
         width: 85vw;
     }
     .dis-input {
-       width: 85vw; 
+       width: 85vw;
     }
     .card_11 p{
         padding-left: -10vw;
@@ -1707,10 +1708,10 @@ button{
     .our-mission{
         display: block;
         height: 85vh;
-        padding-left: 5vw;
+        padding-left: 10vw;
     }
     .mission-img img {
-        width: 90vw;
+        width: 85vw;
     }
     .our-mission-h2 {
         margin-top: 5vh;
@@ -1729,10 +1730,82 @@ button{
         margin-top: 1.8vh;
     }
     .statistic{
+        font-size: 0.85rem;
         display: block;
+        margin-top: 5vh;
     }
     .nn{
         overflow: hidden;
         margin-top: 3vh;
+    }
+    .stat_2, .stat_3, .stat_4{
+        margin-top: 4vh;
+    }
+   .stat_1 p, .stat_2 p, .stat_3 p, .stat_4 p{
+    margin-top: 0.5vh;
+   }
+   .about-company_content p {
+    width: 80vw;
+   }
+   .about-program_card{
+    display: block;
+
+   }
+   .AboutCard{
+    margin-top: 5vh;
+    width: 70vw;
+   }
+   .AboutCard img{
+    width: 70vw;
+    max-height: none;
+   }
+
+   .work_header {
+    width: 90vw;
+    margin-left: 5vw;
+    height: 40vh;
+   }
+   .work_header_p1 {
+    font-size: 0.9rem;
+    }   
+    .work_header_p2 {
+    font-size: 0.9rem;
+    } 
+    .work_header span {
+        margin-left: 35vw;
+        margin-top: -12vh;
+    }
+    .work_header p{
+        width: 80vw;
+    }
+    .work_header p {
+        margin-left: 5vw;
+    }
+    .mainWork{
+        margin-left: 0;
+    }
+    .slider-services {
+        margin-left: 35vw;
+    }
+    .cards-serv1 .services_btn {
+        width: 35vw;
+        font-size: 0.8rem;
+        margin-left: 15vw;
+        padding-left: 3.5vw;
+    }
+    .cards-serv1 .services_btn span{
+        margin-left: 1vw;
+    }
+    .bout-program-work_h2, .bout-program-work_p {
+        margin-left: 5vw;
+    }
+    .bout-program-work_h2 p {
+        display: none;
+    }
+    .bout-program-work_p {
+        max-width: 90vw;
+    }
+    .about-program-work {
+        height: 210vh;
     }
 }

@@ -78,7 +78,7 @@ function AboutCompany(){
                 </div>
                 <div className="overflow"></div>
                 <div className="aboutCompany_footer">
-                    <Footer/>f
+                    <Footer/>
                 </div>
             </div>
         </div>

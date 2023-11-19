@@ -72,7 +72,7 @@ function Services () {
     
         
     return(
-        <div>
+        <div className="MAIN">
             <div className="frame_none" id='frames'>
                 <div className="Service-frame_inputs">
                             <button id="closeFrame" onClick={closeFrame}>&#10006;</button>
@@ -129,7 +129,7 @@ function Services () {
                 <Cards content={{
                     id: "Icone_1",
                     btn_id: "btn1",
-                    class: "cards-footer1 cards-f cards-serv1 card_11",
+                    class: "cards-footer1 cards-f cards-serv1",
                     title: largeCardsTitle,
                     body: largeCardsBody,
                     src: largeCardsIcon,
