@@ -5,6 +5,7 @@ import Main from './Main';
 import AboutCompany from "./AboutCompany";
 import AboutProgram from "./AboutProgram";
 import AllReviews from "./AllReviews";
+import SliderReviews from "./SliderReviews";
 
 
 
@@ -44,7 +45,7 @@ function Header() {
                 <a href="/AboutCompany"><li>О компании</li></a>
                 <a href="/AboutProgram"><li>О программе</li></a>
                 <a href="/AllReviews"><li>Отзывы</li></a>
-                <a href="#footer"><li>Контакты</li></a>
+                <a href="/SliderReviews"><li>Контакты</li></a>
               </ul>
             </nav>
           </div>
@@ -54,6 +55,7 @@ function Header() {
             <Route path="/AboutCompany" element={<AboutCompany/>}/>
             <Route path="/AboutProgram" element={<AboutProgram/>}/>
             <Route path="/AllReviews" element={<AllReviews/>}/>
+            <Route path="/SliderReviews" element={<SliderReviews/>}/>
           </Routes>
         </header>
         </div>

@@ -4,37 +4,20 @@ import Icone_1 from "../img/icone1.svg"
 import Icone_2 from "../img/icone2.svg"
 import Icone_3 from "../img/icone3.svg"
 import Footer from "./Footer";
-function Services () {
-    const [largeCardsIcon, setLargeCardsIcon] = useState(Icone_1);
-    const [largeCardsTitle, setLargeCardsTitle] = useState("Work and Travel Greenheart");
-    const [largeCardsBody, setLargeCardsBody] = useState(`sit amet consectetur. Adipiscing sed nulla nibh vulputate orci faucibus neque ultrices sapien. Neque in curabitur suscipit ut.
-    Eu malesuada diam proin faucibus in leo non diam. Fermentum sed augue felis tortor id nam ipsum enim scelerisque. Proin aliquam in malesuada pretium elementum. Rutrum placerat urna velit elementum ornare vitae mauris in. Dolor amet sed et egestas at mollis quam enim.
-    Massa nullam mi posuere in interdum facilisis dictum adipiscing. In at sed pulvinar sit vestibulum. Ullamcorper ut nisl in at sollicitudin lectus massa suscipit tincidunt. Etiam in sed praesent tristique. Sagittis scelerisque quis mattis purus.`,);
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-    function slideService(){
-        setLargeCardsTitle('RandomText');
-        setLargeCardsBody(`oefihoifleriugirseughoserughopse
-        urghposeurghposerughpoeirshgoperishgpoesr
-        uhgerushgpoesrihgpoersihg
-        poersihgseroih`)
-        setLargeCardsIcon(Icone_2)
-        function slideService(){
-        setLargeCardsTitle('RandomText2');
-        setLargeCardsBody(`'fiehgieruhgorjghortjhrtj
-        hrthijotjhgprjfoiergrogjpeirjgpergeo
-        giergerjg0uergerjgreghrepghreojgiergergorgupijhorjhrtj'`)
-        setLargeCardsIcon(Icone_3);
-        function slideService(){
-            setLargeCardsIcon(Icone_3);
-            }
-            if(largeCardsIcon === Icone_1){
-                slideService()
-            }
-        }
-        if(largeCardsIcon === Icone_2){
-            slideService()
-        }
-    }
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import '../styles/swiper2.css';
+
+// import required modules
+import { Navigation } from 'swiper/modules';
+
+function Services () {
+
 
     function clickBtn1() {
         document.getElementById('frames').className = 'Service-frames'; 
@@ -126,21 +109,26 @@ function Services () {
         </div>
 
             <div className="large_card">
-                <Cards content={{
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                <SwiperSlide>
+                    <Cards content={{
                     id: "Icone_1",
                     btn_id: "btn1",
                     class: "cards-footer1 cards-f cards-serv1",
-                    title: largeCardsTitle,
-                    body: largeCardsBody,
-                    src: largeCardsIcon,
+                    title: "Work and Travel Greenheart",
+                    body: `sit amet consectetur. Adipiscing sed nulla nibh vulputate orci faucibus neque ultrices sapien. Neque in curabitur suscipit ut.
+                    Eu malesuada diam proin faucibus in leo non diam. Fermentum sed augue felis tortor id nam ipsum enim scelerisque. Proin aliquam in malesuada pretium elementum. Rutrum placerat urna velit elementum ornare vitae mauris in. Dolor amet sed et egestas at mollis quam enim.
+                    Massa nullam mi posuere in interdum facilisis dictum adipiscing. In at sed pulvinar sit vestibulum. Ullamcorper ut nisl in at sollicitudin lectus massa suscipit tincidunt. Etiam in sed praesent tristique. Sagittis scelerisque quis mattis purus.`,
+                    src: Icone_1,
                     price: "Учавствовать",
                     link: "Цена: 2500$",
                     onclick: clickBtn1
                     }}/>
-                    <div className="slider-services">
-                        <button onClick={slideService}><span>&lt;</span></button>
-                        <button  onClick={slideService}><span>&gt;</span></button>
-                    </div>
+                </SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+            </Swiper>
+                
             </div>
         </div>
 

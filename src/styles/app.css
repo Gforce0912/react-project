@@ -674,9 +674,9 @@ button{
 .review{
     display: flex;
     color: white;
-    max-width: 800px;
-    margin-left: 20vw;
-    margin-top: 10vh;
+    max-width: 60vw;
+    /* margin-left: 20vw; */
+    margin-top: 40vh;
 }
 
 .rev_left, .rev_right{
@@ -710,8 +710,7 @@ button{
 }
 .review_imgs{
     display: flex;
-    margin-left: 17vw;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 .rev_img_2{
@@ -1804,8 +1803,11 @@ button{
     }
     .bout-program-work_p {
         max-width: 90vw;
-    }
+            }
     .about-program-work {
-        height: 210vh;
+        height: 210     vh;
     }
+}
+.revSl{
+    display: block;
 }

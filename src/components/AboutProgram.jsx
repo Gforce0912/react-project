@@ -8,16 +8,16 @@ function AboutProgram () {
 const [companyContentTitle, setCompanyContentTitle] = useState('МЕЖКУЛЬТУРНЫЙ ОБМЕН')
 const [companyContentBody, setCompanyContentBody] = useState(`Хочу сказать огромное спасибо студенческому агентству! Я принимала участие в программе Work and Travel USA в этом году и ездила в Вирджинию, работали спасателем в компании High Sierra Pools. Все было оформлено быстро, понятно, Анна и Виталина всегда помогали и отвечали на все интересующие вопросы, давали советы. Тренинг спасателей проводила Виталина в Калининграде, все проходило крайне интересно, все было понятно и объяснено.`)
 const [work_p1, setWork_p1] = useState('');
-const [minus1, setMinus1] = useState('-');
+const [minus1, setMinus1] = useState('+');
 
 const [work_p2, setWork_p2] = useState('');
-const [minus2, setMinus2] = useState('-');
+const [minus2, setMinus2] = useState('+');
 
 const [work_p3, setWork_p3] = useState('');
-const [minus3, setMinus3] = useState('-');
+const [minus3, setMinus3] = useState('+');
 
 const [work_p4, setWork_p4] = useState('');
-const [minus4, setMinus4] = useState('-');
+const [minus4, setMinus4] = useState('+');
 
 
 function showTitleWork1(){
@@ -27,21 +27,21 @@ function showTitleWork1(){
         по всем 50 штатам и округу Колумбия. Каждый студент сможет открыть для себя свою Америку, выбрав свой маршрут путешествия по Национальным паркам Монтаны или Калифорнии,
         в захватывающий дух Гранд Каньон, в неспящий Лас Вегас, экзотические Гавайские Острова, а может быть устроит утреннюю пробежку в Центральном Парке.
         `);
-        setMinus1('+');
+        setMinus1('-');
         function showTitleWork1(){
             setWork_p1('');
-            setMinus1('-');
+            setMinus1('+');
         }
-        if(minus1 == '+'){
+        if(minus1 == '-'){
             showTitleWork1();
         }
         setWork_p2("");
         setWork_p3("");
         setWork_p4("");
 
-        setMinus2("-");
-        setMinus3("-");
-        setMinus4("-");
+        setMinus2("+");
+        setMinus3("+");
+        setMinus4("+");
     }
 
 function showTitleWork2(){
@@ -51,21 +51,21 @@ function showTitleWork2(){
         по всем 50 штатам и округу Колумбия. Каждый студент сможет открыть для себя свою Америку, выбрав свой маршрут путешествия по Национальным паркам Монтаны или Калифорнии,
         в захватывающий дух Гранд Каньон, в неспящий Лас Вегас, экзотические Гавайские Острова, а может быть устроит утреннюю пробежку в Центральном Парке.
         `);
-        setMinus2('+');
+        setMinus2('-');
         function showTitleWork2(){
             setWork_p2('');
-            setMinus2('-');
+            setMinus2('+');
         }
-        if(minus2 == '+'){
+        if(minus2 == '-'){
             showTitleWork2();
         }
         setWork_p1("");
         setWork_p3("");
         setWork_p4("");
         
-        setMinus1("-");
-        setMinus3("-");
-        setMinus4("-");
+        setMinus1("+");
+        setMinus3("+");
+        setMinus4("+");
     }
 
 function showTitleWork3(){
@@ -75,21 +75,21 @@ function showTitleWork3(){
         по всем 50 штатам и округу Колумбия. Каждый студент сможет открыть для себя свою Америку, выбрав свой маршрут путешествия по Национальным паркам Монтаны или Калифорнии,
         в захватывающий дух Гранд Каньон, в неспящий Лас Вегас, экзотические Гавайские Острова, а может быть устроит утреннюю пробежку в Центральном Парке.
         `);
-        setMinus3('+');
+        setMinus3('-');
         function showTitleWork3(){
             setWork_p3('');
-            setMinus3('-');
+            setMinus3('+');
         }
-        if(minus3 == '+'){
+        if(minus3 == '-'){
             showTitleWork3();
         }
         setWork_p1("");
         setWork_p2("");
         setWork_p4("");
 
-        setMinus1("-");
-        setMinus2("-");
-        setMinus4("-");
+        setMinus1("+");
+        setMinus2("+");
+        setMinus4("+");
     }
 
     function showTitleWork4(){
@@ -99,12 +99,12 @@ function showTitleWork3(){
         по всем 50 штатам и округу Колумбия. Каждый студент сможет открыть для себя свою Америку, выбрав свой маршрут путешествия по Национальным паркам Монтаны или Калифорнии,
         в захватывающий дух Гранд Каньон, в неспящий Лас Вегас, экзотические Гавайские Острова, а может быть устроит утреннюю пробежку в Центральном Парке.
         `);
-        setMinus4('+');
+        setMinus4('-');
         function showTitleWork4(){
             setWork_p4('');
-            setMinus4('-');
+            setMinus4('+');
         }
-        if(minus4 == '+'){
+        if(minus4 == '-'){
             showTitleWork4();
         }
         setWork_p1("");

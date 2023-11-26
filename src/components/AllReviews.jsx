@@ -7,10 +7,17 @@ import RevImg3 from "../img/All-reviews/rev-img3.png";
 import revAvatar from "../img/All-reviews/camera.png";
 import revAttach from "../img/All-reviews/attach.png";
 
-import Avatar2 from "../img/All-reviews/leila2.jpg";
-import Photo1 from "../img/All-reviews/leila1.jpg";
-import Photo2 from "../img/All-reviews/rustam1.jpg";
-import Photo3 from "../img/All-reviews/rustam2.jpg";
+import Avatar2 from "../img/All-reviews/rustam1.jpg";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import '../styles/swiper.css';
+
+// import required modules
+import { Navigation } from 'swiper/modules';
 
 
 import Arrow from "../img/Arrow.svg";
@@ -20,15 +27,6 @@ import AvatarEditor from 'react-avatar-editor';
 import Avatar from 'react-avatar';
 
 function AllReviews(){
-    const arrow = Arrow;
-    const [name, setName] = useState("Павел Абазов");
-    const [revBody, setRevBody] = useState(`
-    Стоит ли сомневаться перед поездкой в сша по этой программе? Наверно да, но только в выборе города или работы) все остальное очевидно, обращайтесь в агенство Dagcorporetion и вы 100% проведете продуктивное лето!
-    `);
-    const [rev_img1, setRev_img1] = useState(RevImg1);
-    const [rev_img2, setRev_img2] = useState(RevImg2);
-    const [rev_img3, setRev_img3] = useState(RevImg3);
-
     const [nameValue, setNameValue] = useState('Имя');
     const [nameValue2, setNameValue2] = useState('Фамилия');
     const [areaValue, setAreaValue] = useState('');
@@ -36,42 +34,7 @@ function AllReviews(){
 
     const [revLogo, setRevLogo] = useState(RevLogo);
 
-    function reviewsClick(){
-        // avatarEdit.innerHTML = `
-        //     <AvatarEditor
-        //     image={avatarEdit}
-        //     width={250}
-        //     height={250}
-        //     border={10}
-        //     color={[255, 255, 255, 0.6]} // RGBA
-        //     scale={1.2}
-        //     rotate={0}
-        // />
-        // `
-        setRevLogo(Avatar2);
-        setName("Лейла");
-        setRevBody(`
-        Стоит ли сомневаться перед поездкой в сша по этой программе? Наверно да, но только в выборе города или работы) все остальное очевидно, обращайтесь в агенство Dagcorporetion и вы 100% проведете продуктивное лето!
-        `)
-        setRev_img1(Photo1)
-        setRev_img2(Photo2)
-        setRev_img3(Photo3)
-        
-        function reviewsClick(){
-            setRevLogo(RevLogo);
-            setName("Павел Абазов");
-            setRevBody(`
-            Стоит ли сомневаться перед поездкой в сша по этой программе? Наверно да, но только в выборе города или работы) все остальное очевидно, обращайтесь в агенство Dagcorporetion и вы 100% проведете продуктивное лето!
-            `)
-            setRev_img1(RevImg1)
-            setRev_img2(RevImg2)
-            setRev_img3(RevImg3)
-        }
-        if(revLogo === Avatar2){
-            reviewsClick()
-            
-        }
-    }
+
     function revEnter() {
         document.getElementById('frames').className = 'Service-frames'; 
       }
@@ -109,7 +72,7 @@ function AllReviews(){
 
     return(
         <div className="AllReviews"> 
-        <       div className="frame_none" id='frames'>
+                <div className="frame_none" id='frames'>
                     <div className="Service-frame_inputs">
                             <button id="closeFrame" onClick={closeFrame}>&#10006;</button>
                             <div id="frameInputs"  className="frameInput-none">
@@ -125,26 +88,87 @@ function AllReviews(){
                 <h2>Все отзывы</h2>
                 <a href="/"><span>&lt;</span> На главную</a>
             </div>
-            <div className="review">
-                <button onClick={reviewsClick}><div className="rev_left">&lt;</div></button>
-                <div className="rev_img">
-                    <img src={revLogo} alt="" />
-                    <h4>{name}</h4>
-                </div>
-                <div className="rev_body"><p>{revBody}</p></div>
-                <button onClick={reviewsClick}><div className="rev_right">&gt;</div></button>
-            </div>
-            <div className="review_imgs">
-                <div className="rev_img1">
-                    <img className="rev_img_1 img_rev" src={rev_img1} alt="" />
-                </div>
-                <div className="rev_img2">
-                    <img className="rev_img_2 img_rev" src={rev_img2} alt="" />
-                </div>
-                <div className="rev_img3">
-                    <img className="rev_img_3 img_rev" src={rev_img3} alt="" />
-                </div>
-            </div>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                    <SwiperSlide>
+                        <div className="revSl">
+                            <div className="review">
+                                <div className="rev_img">
+                                    <img src={RevLogo} alt="" />
+                                    <h4>Павел Абазов</h4>
+                                </div>
+                                <div className="rev_body">
+                                    <p>
+                                        Стоит ли сомневаться перед поездкой в сша по этой программе? Наверно да, но только в выборе города или работы все остальное очевидно, обращайтесь в агенство Dagcorporetion и вы 100% проведете продуктивное лето!
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="review_imgs">
+                                <div className="rev_img1">
+                                    <img className="rev_img_1 img_rev" src={RevImg1} alt="" />
+                                </div>
+                                <div className="rev_img2">
+                                    <img className="rev_img_2 img_rev" src={RevImg2} alt="" />
+                                </div>
+                                <div className="rev_img3">
+                                    <img className="rev_img_3 img_rev" src={RevImg3} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="revSl">
+                            <div className="review">
+                                <div className="rev_img">
+                                    <img src={Avatar2} alt="" />
+                                    <h4>Рустам Магомедов</h4>
+                                </div>
+                                <div className="rev_body">
+                                    <p>
+                                        Меня зовут Рустам, я крутой senyor программист, мне 500000 лет и я все в этом мире видел
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="review_imgs">
+                                <div className="rev_img1">
+                                    <img className="rev_img_1 img_rev" src={RevImg1} alt="" />
+                                </div>
+                                <div className="rev_img2">
+                                    <img className="rev_img_2 img_rev" src={RevImg2} alt="" />
+                                </div>
+                                <div className="rev_img3">
+                                    <img className="rev_img_3 img_rev" src={RevImg3} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                    <div className="revSl">
+                            <div className="review">
+                                <div className="rev_img">
+                                    <img src={RevImg1} alt="" />
+                                    <h4>Секрет Секретов</h4>
+                                </div>
+                                <div className="rev_body">
+                                    <p>
+                                        Мне очень понравилось эта программа, прям восхещен!!!
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="review_imgs">
+                                <div className="rev_img1">
+                                    <img className="rev_img_1 img_rev" src={RevImg1} alt="" />
+                                </div>
+                                <div className="rev_img2">
+                                    <img className="rev_img_2 img_rev" src={RevImg2} alt="" />
+                                </div>
+                                <div className="rev_img3">
+                                    <img className="rev_img_3 img_rev" src={RevImg3} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            
             <div className="AllRevFeedback">
                 <hr className="rev_hr1"/>
                 <h2>Оставить отзыв</h2>
@@ -175,7 +199,7 @@ function AllReviews(){
                         <textarea className="form-rev_" placeholder="Ваш отзыв" value={areaValue} onChange={ev => setAreaValue(ev.target.value)}></textarea>
                         <p>Осталось 250 символов</p>
                     </div>
-                    <button onClick={revEnter} className="btn rev-btn main-btn-a rev-btn">Оnравить отзыв<span><img src={arrow} alt="" /></span></button>
+                    <button onClick={revEnter} className="btn rev-btn main-btn-a rev-btn">Оnравить отзыв<span><img src={Arrow} alt="" /></span></button>
                 </div>
             </div>
             <Footer/>
