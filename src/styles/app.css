@@ -710,7 +710,7 @@ button{
 }
 .review_imgs{
     display: flex;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .rev_img_2{
@@ -1807,6 +1807,12 @@ button{
     .about-program-work {
         height: 210     vh;
     }
+        .review{
+            display: block;
+        }
+        .swiper {
+            width: 70vw;
+        }
 }
 .revSl{
     display: block;

@@ -1,7 +1,7 @@
 .swiper {
     margin-top: -20vh;
     width: 65vw;
-    height: 105vh;
+    height: 100vh;
   }
   
   .swiper-slide {
@@ -21,4 +21,25 @@
     height: 100%;
     object-fit: cover;
   } */
-  
+  .swiper-button-prev::after, .swiper-button-next::after{
+    color: white;
+    font-size: 20px;
+  }
+  @media (max-width: 720px) {
+    .swiper {
+      padding-left: 8vw;
+      margin-top: -20vh;
+      width: 90vw;
+      height: 200vh;
+    }
+    .review_imgs{
+      margin-left: -10vw;
+      display: block;
+    }
+    .rev_img_1, .rev_img_3{
+      width: 240px;
+    } 
+    .rev_img{
+      margin-left: 12vw;
+    }
+  }
