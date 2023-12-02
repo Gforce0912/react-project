@@ -43,7 +43,7 @@ button{
 
 .head__nav img{
     width: calc(var(--index) * 2);
-    margin-left: 180px;
+    margin-left: 10vw;
 }
 .yellow-color li{
     color:#FFC222;
@@ -68,7 +68,7 @@ button{
 }
 .head__slide-text .btn{
     margin-top: 20px;
-    padding-left: 16px;
+    padding-left: 1vw;
     justify-content: center;
     align-items: center;
     font-size: 13px;
@@ -79,20 +79,21 @@ button{
     display: flex;
     margin-left: 44vw;
     height: 32px;
-    width: 140px;
+    width: 10.5vw;
     transition: all 0.5s;
     cursor: pointer;
 }
 .head__slide-text .btn:hover{
     background: #FFC222;
 }
+
 .head__slide-text .btn span{
     background: #FFC222;
     border-radius: 5px;
     padding-top: 5px;
-    width: 23px;
+    width: 2vw;
     height: 32px;
-    margin-left: 16px;
+    margin-left: 1.3vw;
     border: #FFC222 solid 2px;
 }
 .head__slide-text .btn span img{
@@ -146,6 +147,13 @@ button{
   margin-left: -27vw;
   margin-top: 30px;
 }
+main{
+  padding-bottom: 20vh;
+}
+.allMain{
+  padding-bottom: 20vh;
+}
+
 .cards{
   margin-top: 10vh;
 }
@@ -216,11 +224,11 @@ button{
     transition: all 0.5s;
     margin-left: 150px;
     margin-top: 25px;
-    padding-left: 25px;
+    padding-left: 2vw;
     text-align: center;
     display: flex;
     align-items: center;
-    width: 190px;
+    width: 12.75vw;
     height: 40px;
     border: 1px solid #FFC222;
     border-radius: 6px;
@@ -310,7 +318,7 @@ button{
     text-align: center;
 }
 .reviews-main{
-    padding-left: 8vw;
+    padding-left: 7vw;
     display: flex;
 }
 
@@ -330,9 +338,9 @@ button{
     }
 }
 .all-reviews{
-    margin-top: calc(var(--index) * 3) ;
-    padding-left: 47px;
-    width: 170px;
+    margin-top: 15vh;
+    padding-left: 2vw;
+    width: 11.3vw;
     margin-left: 600px;
 }
 .about_company{
@@ -431,9 +439,6 @@ button{
     background: #324451;
     height: 1000px;
     position: absolute;
-}
-.aboutCompany_footer{
-    position: relative;
 }
 .statistic{
     display: flex;
@@ -557,9 +562,7 @@ button{
     padding-top: 10vh;
     margin-top: 20vh;
 }
-.AboutProgram_footer {
-  margin-top: 0;
-}
+
 .work_header span{
     position: absolute;
     margin-left: 27vw;
@@ -788,7 +791,8 @@ button{
     background: none;
 }
 
-.rev_input1{
+.rev_input1 {
+    margin-left: 1vw;
     margin-right: 10vw;
 }
 
@@ -952,7 +956,7 @@ button{
 
 
 .footer{
-    margin-top: 0;
+    position: relative;
     padding-top: 20px;
     background:#1E303D;
     margin-top: 0vh;
@@ -1236,11 +1240,6 @@ button{
 .rev_head a{
     color: white
 }
-
-.Main_footer{
-    margin-top: 15vh;
-}
-
 .aboutCompany_footer{
     margin-top: 90vh;
 }
@@ -1300,12 +1299,7 @@ button{
     transform:scale(1.1);
 }
 
-.services_footer{
-  margin-top: 8vh;
-}
-.AboutProgram_footer{
-  margin-top: 0vh;
-}
+
 .Service-frame_inputs{
     display:grid;
 }
@@ -1346,7 +1340,7 @@ button{
     margin-top: 2vh;
     transition: all 0.5s;
 }
-.Service-frame_inputs button:hover{
+.Service-frame_inputs button:h`over{
     color: #6d6d6d;
 }
 .Service-frame_btn button{
@@ -1766,10 +1760,10 @@ button{
    }
    .work_header_p1 {
     font-size: 0.9rem;
-    }   
+    }
     .work_header_p2 {
     font-size: 0.9rem;
-    } 
+    }
     .work_header span {
         margin-left: 35vw;
         margin-top: -12vh;
@@ -1809,9 +1803,6 @@ button{
     }
         .review{
             display: block;
-        }
-        .swiper {
-            width: 70vw;
         }
 }
 .revSl{

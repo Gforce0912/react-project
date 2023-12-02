@@ -5,7 +5,7 @@ function Cards(props) {
   const arrow = Arrow;
   let btn1 = document.getElementById('btn1');
 
-    
+
     return(
         <div className="Cards" id="cards">
             <div className="card">
@@ -14,7 +14,7 @@ function Cards(props) {
                     <div className="card__body" id="body"><p>{props.content.body}</p></div>
                     <div className={props.content.class}>
                         <div>
-                            <a className="cards-link" id="cards_link" href="#">{props.content.link}</a>
+                            <a className="cards-link" id="cards_link" href="/Services">{props.content.link}</a>
                             <hr />
                         </div>
                         <a href={props.content.href}><button id={props.content.btn_id} onClick={props.content.onclick} className="card__btn services_btn"><b>{props.content.price}</b><span><img src={arrow} alt="" /></span></button></a>

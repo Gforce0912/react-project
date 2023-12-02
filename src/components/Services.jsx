@@ -6,7 +6,7 @@ import Icone_3 from "../img/icone3.svg"
 import Footer from "./Footer";
 function Services () {
     function clickBtn1() {
-        document.getElementById('frames').className = 'Service-frames'; 
+        document.getElementById('frames').className = 'Service-frames';
       }
     function closeFrame(){
         document.getElementById('frames').className = 'frame_none';
@@ -20,19 +20,19 @@ function Services () {
             document.getElementById('frameInputs').innerHTML = `Спасибо вам за то, что выбрали
             нас. Наш специалист свяжется с
             вами в ближайшее время`;
-            document.getElementById('frameInputs').className = 'frame_input-none'; 
-            document.getElementById('frameBtn').innerHTML = `<button id="frameClose">Закрыть</button>`; 
+            document.getElementById('frameInputs').className = 'frame_input-none';
+            document.getElementById('frameBtn').innerHTML = `<button id="frameClose">Закрыть</button>`;
             document.getElementById('frameClose').onclick = function () {
-                document.getElementById('frames').className = 'frame_none';      
+                document.getElementById('frames').className = 'frame_none';
             }
         }
         else{
             document.getElementById('frameInput1').style = `
             border: solid 2px rgb(255, 95, 95);
-            `; 
+            `;
             document.getElementById('frameInput2').style = `
             border: solid 2px rgb(255, 95, 95);
-            `;             
+            `;
         }
     }
     const [frameInputValue1, setFrameInputValue1] = useState('');
@@ -49,8 +49,7 @@ function Services () {
         setCardsTitle("Work and Travel Greenheart");
         setCardsBody(`
         sit amet consectetur. Adipiscing sed nulla nibh vulputate orci faucibus neque ultrices sapien. Neque in curabitur suscipit ut.
-        Eu malesuada diam proin faucibus in leo non diam. Fermentum sed augue felis tortor id nam ipsum enim scelerisque. Proin aliquam in malesuada pretium elementum. Rutrum placerat urna velit elementum ornare vitae mauris in. Dolor amet sed et egestas at mollis quam enim.
-        Massa nullam mi posuere in interdum facilisis dictum adipiscing. In at sed pulvinar sit vestibulum. Ullamcorper ut nisl in at sollicitudin lectus massa suscipit tincidunt. Etiam in sed praesent tristique. Sagittis scelerisque quis mattis purus.
+        help dkd okdfp kofdk okdfpoksdf dspfdsfkosd in interdum facilisis dictum adipiscing. In at sed pulvinar sit vestibulum. Ullamcorper ut nisl in at sollicitudin lectus massa suscipit tincidunt. Etiam in sed praesent tristique. Sagittis scelerisque quis mattis purus.
         `)
     }
     const cardsClick2 = () => {
@@ -71,9 +70,10 @@ function Services () {
         Massa nullam mi posuere in interdum facilisis dictum adipiscing. In at sed pulvinar sit vestibulum. Ullamcorper ut nisl in at sollicitudin lectus massa suscipit tincidunt. Etiam in sed praesent tristique. Sagittis scelerisque quis mattis purus.
         `)
     }
- 
+
     return(
         <div className="MAIN">
+          <div className='allMain'>
             <div className="frame_none" id='frames'>
                 <div className="Service-frame_inputs">
                             <button id="closeFrame" onClick={closeFrame}>&#10006;</button>
@@ -125,7 +125,7 @@ function Services () {
                     src: Icone_3,
                     price: "2500$",
                     link: "Подробнее",
-                    href: "/Services"  
+                    href: "/Services"
                     }}/>
                 </div>
         </div>
@@ -143,7 +143,7 @@ function Services () {
                     }}/>
             </div>
         </div>
-
+        </div>
         <div className="services_footer">
           <Footer/>
         </div>

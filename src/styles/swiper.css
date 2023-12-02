@@ -30,10 +30,10 @@
       padding-left: 8vw;
       margin-top: -20vh;
       width: 90vw;
-      height: 200vh;
+      height: 190vh;
     }
     .review_imgs{
-      margin-left: -10vw;
+      margin-left: -15vw;
       display: block;
     }
     .rev_img_1, .rev_img_3{
@@ -41,5 +41,24 @@
     } 
     .rev_img{
       margin-left: 12vw;
+    }
+    .AllRevFeedback {
+      margin-top: 10vh;
+      margin-left: 8vw;
+    }
+    .rev-img {
+      margin-left: 17vw;
+    }
+    .names {
+      display: block;
+      margin-left: 2vw;
+      margin-top: 10vh;
+    }
+    .rev_input1, .rev_input2{
+      width: 95vw;
+      height: 7vh;
+    }
+    .review {
+      margin-top: 28vh;
     }
   }

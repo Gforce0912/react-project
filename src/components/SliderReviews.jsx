@@ -15,11 +15,7 @@ export default function App() {
   return (
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide>
-          <div className="revSlide">
-            kfsldflsd
-          </div>
-        </SwiperSlide>
+        <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
       </Swiper>

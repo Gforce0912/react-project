@@ -9,7 +9,7 @@ function Footer (){
 const arrowWhite = ArrowWhite;
 
     return(
-        <div className="footer Main_footer services_footer reviews_footer aboutProgram_footer aboutCompany_footer" id="footer">
+        <div className="footer" id="footer">
             <div className="main_footer">
                 <h2>Комплексное закрытие предприятия</h2>
                 <p className="main_footer_p">Полное прекращение  существования юридического лица <br/>
@@ -27,8 +27,7 @@ const arrowWhite = ArrowWhite;
                 <div className="gps">
                     <img className="gpsImg1" src={GPS} alt="" />
                     <b><p>Махачкала, р-он, Троллейбусное-кольцо</p></b>
-                    <img src={Logo
-                    } alt="logo" className="logo2"/>
+                    <img src={Logo} alt="logo" className="logo2"/>
                 </div>
             </div>
             <div className="footer_map">

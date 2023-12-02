@@ -80,7 +80,7 @@ const Main = ( ) => {
                 link: "Подробнее"}}/>
             </div>
             <div>
-                <a href="#" className="main-btn-a"><button className="btn main-btn"><b>Показать все услуги</b><span><img src={arrow} alt="" /></span></button></a>
+                <a href="/Services" className="main-btn-a"><button className="btn main-btn"><b>Показать все услуги</b><span><img src={arrow} alt="" /></span></button></a>
             </div>
             <div className="about">
                 <h2>О компании</h2>
@@ -89,7 +89,7 @@ const Main = ( ) => {
                 о программе все и даже чуть больш, способны ответить абсолютно на любой вопрос. <br/>
                 Наши сотрудники учавстовали в программе и успели отлично изучить ее "изнутри".
                 </p>
-            <a href="#" className="main-btn-a"><button className="about_btn"><p>Показать все услуги</p><span><img src={arrowWhite} alt="" /></span></button></a>
+            <a href="#" className="main-btn-a"><button className="about_btn"><p>Узнать больше</p><span><img src={arrowWhite} alt="" /></span></button></a>
             </div>
             <div className="main__content">
                     <div className="main__content-head"  id="form">
